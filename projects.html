@@ -1,0 +1,233 @@
+---
+layout: page
+title: My Projects | Andrew Kulpa
+permalink: /projects/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>Just some of my latest projects.</h1>
+          <p>Don’t just take our word for it. Check out some of my latest work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Portfolio Start -->
+<section id="portfolio-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="portfolio-menu">
+            <ul>
+              <li class="filter" data-filter="all">Everything</li>
+              <li class="filter" data-filter=".Security">Security</li>
+              <li class="filter" data-filter=".Graphic">Graphic</li>
+              <li class="filter" data-filter=".Game">Game</li>
+              <li class="filter" data-filter=".AIAutomation">AI/Automation</li>
+            </ul>
+          </div>
+          <script>
+            $('.filter').click(function () {
+              $('.card').parent().removeClass('d-none');
+              var filter = $(this).attr("data-filter"); // get the value of the input, which we filter on
+              if (filter != "all") {
+                $('.cards-row').find('.card:not(' + filter + ')').parent().addClass('d-none');
+              }
+            })
+
+          </script>
+          <div class="container">
+            <div class="row cards-row mb-5">
+              <div class="col-md-4 project-tile ">
+                <div class="card mx-auto mb-3 Security AIAutomation">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/50987/money-card-business-credit-card-50987.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Credit Card Fraud Classifier</h5>
+                    <p class="card-text">A neural network that classifies whether credit card transactions are
+                      fraudulent using Tensorflow, SciKit, NumPy, and Pandas.</p>
+                    <a href="https://github.com/Andrew-Kulpa/Fraud-Detection-Classifier" class="btn btn-primary">Source
+                      Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 project-tile">
+                <div class="card mx-auto mb-3 Graphic">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">OpenGL SSAO</h5>
+                    <p class="card-text">Animplementation of Screen-Space Ambient Occlusion using C++ and GLSL to
+                      appoximate the occlusion factor of objects in a G-Buffer in OpenGL.</p>
+                    <a href="https://github.com/drockwood94/Advanced-Graphics-Final" class="btn btn-primary">Source
+                      Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 project-tile">
+                <div class="card mx-auto mb-3 Graphic">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Weather Data Visualization</h5>
+                    <p class="card-text">A Tableau story from a National Climatic Data Center data set also using a KPI
+                      based upon weather event costs and casualties.</p>
+                    <a href="https://public.tableau.com/profile/daniel.rockwood#!/vizhome/WIU-CS567-FinalProject-WeatherStory/WeatherStory"
+                      class="btn btn-primary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 project-tile AIAutomation">
+                <div class="card mx-auto mb-3">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/762888/pexels-photo-762888.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">ProxySpider</h5>
+                    <p class="card-text">A Java forward proxy and sitemapper with automated JavaDocs and Jar building
+                      via Maven.</p>
+                    <a href="https://github.com/Andrew-Kulpa/ProxySpider" class="btn btn-primary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 project-tile ">
+                <div class="card mx-auto mb-3 AIAutomation">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/247932/pexels-photo-247932.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Breast Cancer Classifier</h5>
+                    <p class="card-text">An artificial neural network that classifies breast cancer as malignant or
+                      benign using Tensorflow, Numpy, and Pandas.</p>
+                    <a href="https://github.com/Andrew-Kulpa/AI-cancer-classifier" class="btn btn-primary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 project-tile ">
+                <div class="card mx-auto mb-3 Security">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">VulnApp</h5>
+                    <p class="card-text">A vulnerable LAMP web application that automatically builds using Chef Solo
+                      and Vagrant.</p>
+                    <a href="https://github.com/Andrew-Kulpa/Vulnapp" class="btn btn-primary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4 project-tile ">
+                <div class="card mx-auto mb-3 Game">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/159438/android-tv-game-controller-game-controller-video-game-controller-android-game-controller-159438.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Asteroids2.0</h5>
+                    <p class="card-text">A Swift-based iOS game obviously based upon the iconic Asteroids game. Works
+                      on tablets and other apple devices.</p>
+                    <a href="https://github.com/Andrew-Kulpa/Asteroids_2.0_app" class="btn btn-primary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 project-tile">
+                <div class="card mx-auto mb-3 AIAutomation">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">C Port Scanner</h5>
+                    <p class="card-text">A port scanner written in C. As a basic command line tool, it can scan any
+                      ports specified for any specified addresses.</p>
+                    <a href="https://github.com/Andrew-Kulpa/c-port-scanner" class="btn btn-primary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 project-tile">
+                <div class="card mx-auto mb-3 Game AIAutomation">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+                    alt="Card image cap">
+                  <div class="card-body">
+                    <h5 class="card-title">Rock-Paper-Scissors Bot</h5>
+                    <p class="card-text">A Reddit bot that can play Rock-Paper-Scissors with users via submission
+                      comments and mentions.</p>
+                    <a href="https://github.com/Andrew-Kulpa/RedditRPSBot" class="btn btn-primary">Source Code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- Clients Logo Section Start
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve
+            achieved for other clients, and meet our highly experienced Team who just love to design.</p>
+          <a class="btn btn-default btn-call-to-action" href="#">Tell Us Your Story</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

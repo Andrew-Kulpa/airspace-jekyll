@@ -72,9 +72,21 @@ header .navbar {
   margin-bottom: 0px;
   border: 0px;
 }
-header .navbar-brand {
-  padding-top: 5px;
+
+.navbar-brand img{
+  height: 32px;
+  vertical-align: middle;
+  margin-top: auto;
 }
+
+.navbar-nav {
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  min-width: 100%;
+  color:#666;
+}
+
 header .navbar-default {
   background: none;
   border: 0px;
@@ -114,8 +126,9 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 100%;
   height: 100%;
   background: linear-gradient(to left, #8b86a3, #322e40);
-  opacity: 0.8;
+  opacity: 0.9;
 }
+
 #slider .block {
   color: #E3E3E4;
 }
@@ -266,6 +279,41 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #fff;
   padding: 10px 20px;
 }
+@media(max-width:768px){
+  #feature:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #8b86a3, #322e40);
+    opacity: 0.9;
+  }
+  #feature{
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  #feature p{
+    color: white;
+  }
+  #feature .btn-view-works{
+    padding: 15px 35px;
+    border: none;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333333;
+    margin-top: 30px;
+  }
+}
+
+
 /*--
 	content Start
 --*/
@@ -377,14 +425,13 @@ font header .navbar-default .navbar-nav li a:hover {
   background: linear-gradient(to left, #928dab, #1f1c2c 70%);
   opacity: 0.8;
 }
-#global-header .block {
+#global-header {
   color: #E3E3E4;
   margin: 0 auto;
-  padding-left: 90px;
   text-align: center;
 }
 #global-header .block h1 {
-  font-weight: 100;
+  font-weight: 150;
   font-size: 45px;
   letter-spacing: 6px;
   padding-bottom: 15px;
@@ -404,16 +451,16 @@ font header .navbar-default .navbar-nav li a:hover {
   overflow: hidden;
   padding: 80px 0;
 }
-#portfolio-work .block .portfolio-menu {
+#portfolio-work .portfolio-menu {
   padding-bottom: 30px;
   text-align: center;
 }
-#portfolio-work .block .portfolio-menu ul {
+#portfolio-work .portfolio-menu ul {
   border: 1px solid #999999;
   display: inline-block;
   margin-bottom: 40px;
 }
-#portfolio-work .block .portfolio-menu ul li {
+#portfolio-work .portfolio-menu ul li {
   display: inline-block;
   padding: 0px 25px;
   cursor: pointer;
@@ -424,14 +471,14 @@ font header .navbar-default .navbar-nav li a:hover {
   text-transform: capitalize;
   position: relative;
 }
-#portfolio-work .block .portfolio-menu ul .active {
+#portfolio-work .portfolio-menu ul .active {
   color: #655E7A;
   position: relative;
 }
-#portfolio-work .block .portfolio-menu ul .active:before {
+#portfolio-work .portfolio-menu ul .active:before {
   content: "\f0d7";
   position: absolute;
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 Free';
   bottom: -18px;
   font-size: 30px;
   width: 20px;
@@ -450,7 +497,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .portfolio-menu ul li:hover:before {
   content: "\f0d7";
   position: absolute;
-  font-family: 'FontAwesome';
+  font-family: 'Font Awesome 5 Free';
   bottom: -18px;
   font-size: 30px;
   width: 20px;
@@ -466,17 +513,18 @@ font header .navbar-default .navbar-nav li a:hover {
   -ms-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-#portfolio-work .block .portfolio-contant ul li {
+
+#portfolio-work .portfolio-content ul li {
   float: left;
   width: 32.22%;
   overflow: hidden;
   margin: 6px;
   position: relative;
 }
-#portfolio-work .block .portfolio-contant ul li:hover .overly {
+#portfolio-work .portfolio-content ul li:hover .overly {
   opacity: 1;
 }
-#portfolio-work .block .portfolio-contant ul li:hover .position-center {
+#portfolio-work .portfolio-content ul li:hover .position-center {
   position: absolute;
   top: 50%;
   -webkit-transform: translate(0%, -50%);
@@ -484,28 +532,28 @@ font header .navbar-default .navbar-nav li a:hover {
   -ms-transform: translate(0%, -50%);
   transform: translate(0%, -50%);
 }
-#portfolio-work .block .portfolio-contant ul li a {
+#portfolio-work .portfolio-content ul li a {
   display: block;
   color: #fff;
 }
-#portfolio-work .block .portfolio-contant ul li a h2 {
+#portfolio-work .portfolio-content ul li a h2 {
   font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-#portfolio-work .block .portfolio-contant ul li a p {
+#portfolio-work .portfolio-content ul li a p {
   font-size: 15px;
 }
-#portfolio-work .block .portfolio-contant ul li a span {
+#portfolio-work .portfolio-content ul li a span {
   font-style: italic;
   font-size: 13px;
   color: #655E7A;
 }
-#portfolio-work .block .portfolio-contant ul img {
+#portfolio-work .portfolio-content ul img {
   width: 100%;
   height: auto;
 }
-#portfolio-work .block .portfolio-contant .overly {
+#portfolio-work .portfolio-content .overly {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -518,7 +566,7 @@ font header .navbar-default .navbar-nav li a:hover {
   transition: .3s all;
   text-align: center;
 }
-#portfolio-work .block .portfolio-contant .position-center {
+#portfolio-work .portfolio-content .position-center {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -529,9 +577,6 @@ font header .navbar-default .navbar-nav li a:hover {
   -webkit-transition: .5s all;
   -o-transition: .5s all;
   transition: .5s all;
-}
-#portfolio-work .block .mix {
-  display: none;
 }
 /*--
 	wrapper-work Start
@@ -623,7 +668,7 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 100%;
   height: 100%;
   background: linear-gradient(to left, #928dab, #1f1c2c 70%);
-  opacity: 0.8;
+  opacity: 0.3;
 }
 #slider-contact .block {
   color: #E3E3E4;
@@ -633,7 +678,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #slider-contact .block h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  font-size: 45px;
+  font-size: 45px !important;
   line-height: 60px;
   letter-spacing: 6px;
   padding-bottom: 15px;
@@ -678,11 +723,19 @@ font header .navbar-default .navbar-nav li a:hover {
 #contact-form .block button {
   width: 100%;
   height: 60px;
-  background: #47424C;
+  background: #212529;
   border: none;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+}
+
+.d-none{
+  transition: opacity 1s ease-out;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  display: none;
 }
 /*--
 	wrapper-contact Start
@@ -736,6 +789,20 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #5C5C5C;
   display: block;
 }
+
+#contact-form .fab:hover, #contact-box .address-block a:hover{
+  color:#47424C;
+}
+
+#contact-form .block button:hover{
+  background-color:#47424C;
+}
+
+#contact-box .address-block a{
+  color:#212529;
+}
+
+
 /*--
 	features-contact Start
 --*/
