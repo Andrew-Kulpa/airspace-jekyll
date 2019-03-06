@@ -279,39 +279,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #fff;
   padding: 10px 20px;
 }
-@media(max-width:768px){
-  #feature:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to left, #8b86a3, #322e40);
-    opacity: 0.9;
-  }
-  #feature{
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 70px 0px;
-    position: relative;
-    text-align: center;
-    color: #fff;
-  }
-  #feature p{
-    color: white;
-  }
-  #feature .btn-view-works{
-    padding: 15px 35px;
-    border: none;
-    background-color: #fff;
-    font-size: 15px;
-    color: #333333;
-    margin-top: 30px;
-  }
-}
+
 
 
 /*--
@@ -399,6 +367,12 @@ font header .navbar-default .navbar-nav li a:hover {
 #clients-logo-section .clients-logo-img {
   padding: 0px 50px;
 }
+
+.clients-logo-img img{
+  width: auto;
+  max-height: 100px;
+}
+
 /*---------------------------------------------
 					Work Start
 -----------------------------------------------*/
@@ -872,3 +846,47 @@ footer .footer-manu ul li a {
 footer .footer-manu ul li a:hover {
   color: #000;
 }
+
+
+@media(max-width:768px){
+  #feature:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #8b86a3, #322e40);
+    opacity: 0.9;
+  }
+  #feature{
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 70px 0px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+  }
+  #feature p{
+    color: white;
+  }
+  #feature .btn-view-works{
+    padding: 15px 35px;
+    border: none;
+    background-color: #fff;
+    font-size: 15px;
+    color: #333333;
+    margin-top: 30px;
+  }
+  .clients-logo-img img{
+    width: auto;
+    max-height: 70px;
+  }
+  .owl-item{
+    max-width: 150px;
+  }
+}
+
+
