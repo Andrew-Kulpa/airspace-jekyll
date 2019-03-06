@@ -1,6 +1,6 @@
 ---
 layout: page
-title: My Projects | Andrew Kulpa
+title: Projects | Andrew Kulpa
 permalink: /projects/
 ---
 
@@ -34,10 +34,12 @@ permalink: /projects/
           </div>
           <script>
             $('.filter').click(function () {
-              $('.card').parent().removeClass('d-none');
               var filter = $(this).attr("data-filter"); // get the value of the input, which we filter on
               if (filter != "all") {
-                $('.cards-row').find('.card:not(' + filter + ')').parent().addClass('d-none');
+                $('.cards-row').find('.card:not(' + filter + ')').parent().fadeOut('slow');
+                $('.cards-row').find('.card' + filter).parent().fadeIn('slow');
+              } else{
+                $('.cards-row').find('.card').parent().fadeIn('slow');
               }
             })
 
@@ -215,18 +217,4 @@ permalink: /projects/
   </div>
 </section> -->
 
-
-<!-- Call to action Start -->
-<section id="call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h2>I develop intelligent software solutions.</h2>
-          <p>Read more about what we do and my philosophy of design. Judge for yourself the work and results I’ve achieved for other clients.</p>
-          <a class="btn btn-default btn-call-to-action" href="{{ site.baseurl }}/blog" >Tell Me Your Story</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+{% include call_to_action.html %}
