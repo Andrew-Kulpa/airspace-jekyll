@@ -768,10 +768,14 @@ font header .navbar-default .navbar-nav li a:hover {
   color:#47424C;
 }
 
-#contact-form .block button:hover{
+#contact-form .block .btn:hover, #portfolio-work div.container div .btn-primary:hover{
   background-color:#47424C;
 }
 
+#portfolio-work div.container div .btn-primary{
+  background-color: #212529;
+  border-color: #212529;
+}
 #contact-box .address-block a{
   color:#212529;
 }
