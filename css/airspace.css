@@ -172,6 +172,16 @@ font header .navbar-default .navbar-nav li a:hover {
 #intro .section-title p {
   padding-top: 20px;
 }
+#feature .section{
+  margin-bottom: 70px;
+}
+#feature .section .section-title{
+  margin-bottom: 40px;
+}
+
+#feature .section .section-title h2{
+  margin-bottom: 20px;
+}
 /*--
 	service Start
 --*/

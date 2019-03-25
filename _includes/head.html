@@ -4,10 +4,12 @@
 <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.layout == 'post' %}{{ page.excerpt | strip_html | strip | strip_newlines | truncate: 167 }}{% endif %}">
 <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% endif %}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="og.url" content="{{site.url}}{{page.url}}">
-<meta name="og.title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-<meta name="og.type" content="website">
-<meta name="og.image" content="{{page.image_url}}">
+<meta name="og:url" content="{{site.url}}{{page.url}}">
+<meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="og:type" content="{% if page.content and page.layout == 'post' %}article{% else %}website{% endif %}">
+<meta name="og:image" content="{{page.image_url}}">
+<meta name="og:description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.layout == 'post' %}{{ page.excerpt | strip_html | strip | strip_newlines | truncate: 167 }}{% endif %}">
+
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
