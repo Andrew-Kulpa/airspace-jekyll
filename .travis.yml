@@ -3,8 +3,6 @@ rvm:
   - 2.5.1
 
 before_script:
- - gem uninstall bundler
- - gem install bundler --version '2.0.1'
  - chmod +x ./script/cibuild # or do this locally and commit
 
 # Assume bundler is being used, therefore
