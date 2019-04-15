@@ -41,6 +41,6 @@ deploy:
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   repo: Andrew-Kulpa/Andrew-Kulpa.github.io
   keep_history: true
+  target-branch: master
   on:
     branch: master
-target-branch: master
