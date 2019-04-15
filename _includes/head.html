@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
 <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.content and page.layout == 'post' %}{{ page.excerpt | strip_html | strip | strip_newlines | truncate: 167 }}{% endif %}">
 <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% endif %}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/css/responsive.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
 
-{% if page.title  == 'Timeline | Andrew Kulpa' %} <!-- Conditional CSS includes -->
+{% if page.title  == 'Timeline' %} <!-- Conditional CSS includes -->
 <link rel="stylesheet" href="{{ site.baseurl }}/css/timeline.css" />
 {% endif %}
 <!-- Js -->

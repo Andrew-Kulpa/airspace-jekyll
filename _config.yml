@@ -14,7 +14,7 @@ keep_files:
 
 
 # Site settings
-title: Andrew Kulpa | Personal Website
+title: Andrew Kulpa Personal Website
 subtitle: "A personal website for hosting information on my projects, blog, and contact information."
 url: "https://andrew.kulpa.dev" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
