@@ -23,6 +23,9 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/css/responsive.css" />
 <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
 
+{% if page.title  == 'Timeline | Andrew Kulpa' %} <!-- Conditional CSS includes -->
+<link rel="stylesheet" href="{{ site.baseurl }}/css/timeline.css" />
+{% endif %}
 <!-- Js -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>

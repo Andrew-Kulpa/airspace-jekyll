@@ -1,0 +1,46 @@
+---
+layout: page
+title: Timeline | Andrew Kulpa
+permalink: /timeline
+---
+<!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="block">
+                {% if site.data.experience.size > 0 %}
+                <h1>Experience</h1>
+                <p>Check out a timeline of my academic and work endeavors.</p>
+                {% else %}
+                <h1>Coming Soon</h1>
+                <p>Experience information is currently compiling!</p>
+                {% endif %}
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+    <div id="timeline">
+        {% if site.data.experience.size > 0 %}
+            {% for xp in site.data.experience %}
+            {% assign mod2 = forloop.index | modulo: 2 %}
+            <div class="timeline-item ">
+                <i class="icon {{xp.icon}} timeline-icon"></i>
+                <div class="timeline-content {% if mod2 == 0 %}right{% endif %}">
+                    <h2>{{xp.title}}</h2>
+                    <div class="row mb-2 mt-1">
+                        <div class="text-muted col-sm-12 col-md-6"><p class="mb-0"><i class="fas fa-globe"></i>  {{xp.place}}</p></div>
+                        <div class="text-muted col-sm-12 col-md-6 text-md-right"><p class="mb-0"><i class="fas fa-calendar"></i>  {{xp.years}}</p></div>
+                    </div>
+                    <p>{{xp.description}}</p>
+                    {% if xp.link %}
+                    <a href="{{xp.link}}}" class="btn">link</a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>

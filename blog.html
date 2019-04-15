@@ -10,13 +10,19 @@ keywords: security software developer Andrew Kulpa blog
     <div class="row">
       <div class="col-md-12">
         <div class="block">
+          {% if site.posts.size > 0 %}
           <h1>Get the latest on what I'm doing</h1>
           <p>Catch up with me, anytime and anywhere</p>
+          {% else %}
+          <h1>Coming Soon</h1>
+          <p>The drafts are currently baking in the oven!</p>
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
 </section>
+
 {% for post in site.posts %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
@@ -26,3 +32,4 @@ keywords: security software developer Andrew Kulpa blog
   </p>
 </div>
 {% endfor %}
+
