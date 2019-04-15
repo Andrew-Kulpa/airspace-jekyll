@@ -35,7 +35,7 @@ notifications:
 
 deploy:
   provider: pages
-  local-dir: ./site
+  local-dir: ./_site
   skip_cleanup: true
   name: Deployment Bot
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
