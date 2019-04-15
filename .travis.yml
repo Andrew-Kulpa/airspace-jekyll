@@ -35,8 +35,11 @@ notifications:
 
 deploy:
   provider: pages
+  local-dir: ./site
   skip_cleanup: true
+  name: Deployment Bot
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  repo: Andrew-Kulpa/Andrew-Kulpa.github.io
   keep_history: true
   on:
     branch: master
