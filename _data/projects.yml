@@ -1,0 +1,54 @@
+- title: Credit Card Fraud Classifier
+  image: https://images.pexels.com/photos/50987/money-card-business-credit-card-50987.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260
+  description: A neural network that classifies whether credit card transactions are fraudulent using Tensorflow, SciKit, NumPy, and Pandas.
+  link: https://github.com/Andrew-Kulpa/Fraud-Detection-Classifier
+  filters: Security AIAutomation
+
+- title: OpenGL SSAO
+  image: https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260
+  description:  An implementation of Screen-Space Ambient Occlusion using C++ and GLSL to appoximate the occlusion factor of objects in a G-Buffer in OpenGL.
+  link: https://github.com/drockwood94/Advanced-Graphics-Final
+  filters: Graphic
+
+- title: Weather Data Visualization
+  image: https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+  description: A Tableau story from a National Climatic Data Center data set also using a KPI based upon weather event costs and casualties.
+  link: https://public.tableau.com/profile/daniel.rockwood#!/vizhome/WIU-CS567-FinalProject-WeatherStory/WeatherStory
+  filters: Graphic
+
+- title: ProxySpider
+  image: https://images.pexels.com/photos/762888/pexels-photo-762888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+  description: A Java forward proxy and sitemapper with automated JavaDocs and Jar building via Maven.
+  link: https://github.com/Andrew-Kulpa/ProxySpider
+  filters: AIAutomation
+
+- title: Breast Cancer Classifier
+  image: https://images.pexels.com/photos/247932/pexels-photo-247932.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+  description: An artificial neural network that classifies breast cancer as malignant or benign using Tensorflow, Numpy, and Pandas.
+  link: https://github.com/Andrew-Kulpa/AI-cancer-classifier
+  filters: AIAutomation
+
+- title: VulnApp
+  image: https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+  description: A vulnerable LAMP web application that automatically builds using Chef Solo and Vagrant.
+  link: https://github.com/Andrew-Kulpa/Vulnapp
+  filters: Security
+
+- title: Asteroids2.0
+  image: https://images.pexels.com/photos/159438/android-tv-game-controller-game-controller-video-game-controller-android-game-controller-159438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+  description: A Swift-based iOS game obviously based upon the iconic Asteroids game. Works on tablets and other apple devices.
+  link: https://github.com/Andrew-Kulpa/Asteroids_2.0_app
+  filters: Game
+
+- title: C Port Scanner
+  image: https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+  description: A port scanner written in C. As a basic command line tool, it can scan any ports specified for any specified addresses.
+  link: https://github.com/Andrew-Kulpa/c-port-scanner
+  filters: AIAutomation
+
+- title: Rock-Paper-Scissors Bot
+  image: https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+  description: A Reddit bot that can play Rock-Paper-Scissors with users via submission comments and mentions.
+  link: https://github.com/Andrew-Kulpa/RedditRPSBot
+  filters: Game AIAutomation
+

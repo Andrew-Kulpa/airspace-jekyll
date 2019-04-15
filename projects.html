@@ -1,0 +1,82 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          {% if site.data.projects.size > 0 %}
+          <h1>Just some of my latest projects.</h1>
+          <p>Don’t just take my word for it. Check out some of my latest work.</p>
+          {% else %}
+          <h1>Coming Soon</h1>
+          <p>The projects are currently baking in the oven!</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if site.data.projects.size > 0 %}
+<!-- Portfolio Start -->
+<section id="portfolio-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="portfolio-menu">
+            <ul>
+              <li class="filter" data-filter="all">Everything</li>
+              <li class="filter" data-filter=".Security">Security</li>
+              <li class="filter" data-filter=".Graphic">Graphic</li>
+              <li class="filter" data-filter=".Game">Game</li>
+              <li class="filter" data-filter=".AIAutomation">AI/Automation</li>
+            </ul>
+          </div>
+          <script>
+            $('.filter').click(function () {
+              var filter = $(this).attr("data-filter"); // get the value of the input, which we filter on
+              if (filter != "all") {
+                $('.cards-row').find('.card:not(' + filter + ')').parent().fadeOut('slow');
+                $('.cards-row').find('.card' + filter).parent().fadeIn('slow');
+              } else {
+                $('.cards-row').find('.card').parent().fadeIn('slow');
+              }
+            })
+
+          </script>
+          <div class="container">
+            <div class="row cards-row mb-5">
+              {% if site.data.projects.size > 0 %}
+                {% for project in site.data.projects %}
+                <div class="col-md-4 project-tile ">
+                  <div class="card mx-auto mb-3 {{project.filters}}">
+                    <img class="card-img-top" src="{{project.image}}"
+                      alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">{{project.title}}</h5>
+                      <p class="card-text">{{project.description}}</p>
+                      <a href="{{project.link}}" class="btn btn-primary">Source
+                        Code</a>
+                    </div>
+                  </div>
+                </div>
+                {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+{% include call_to_action.html %}
+{% endif %}
+<!-- add carousel in the future -->

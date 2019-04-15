@@ -1,0 +1,41 @@
+- title: Computer Science Master's Degree
+  place: Western Illinois University
+  years: Dec 2016 - May 2019
+  icon: fas fa-graduation-cap
+  description: Integrated Master's with focus upon Graphics and Artificial Intelligence; Master's Project included .NET Core web application for Search Engine Optimization
+  link: 
+
+- title: Back-End Web Developer
+  place: Western Illinois University
+  years: Dec 2016 - May 2019
+  icon: fas fa-code
+  description: Automated learning management system tasks; Designed identity management databases; Updated raw-PHP user self-service portal to MVC architecture using Laravel
+  link:
+
+- title: Computer Science Bachelor's Degree
+  place: Western Illinois University
+  years: Aug 2013 - Dec 2017
+  icon: fas fa-graduation-cap
+  description: Double majored in Computer Science and Law Enforcement & Justice Administration with a minor in Homeland Security; Graduated Summa Cum Laude
+  link:
+
+- title: Security Intern
+  place: Western Illinois University
+  years: May 2017 - Aug 2017
+  icon: fas fa-fingerprint
+  description: Created provisioning and configuration process of Cardholder Data Environment intrusion deteciton system using Security Onion and Chef
+  link:
+
+- title: Computer Technician
+  place: Western Illinois University
+  years: Feb 2015 - Nov 2016
+  icon: fas fa-laptop-medical
+  description: Troubleshot library computers and printers; Wrote batch scripts to automate some technician tasks
+  link:
+
+- title: IT Intern
+  place: PCI Pharma Services
+  years: Jun 2015 - Aug 2015
+  icon: fas fa-laptop-medical
+  description: Provided hardware and software support; automated 100+ hour manual security audit report generation using VBA
+  link:

@@ -1,0 +1,37 @@
+
+exclude:
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"
+
+
+# Site settings
+title: Andrew Kulpa Personal Website
+subtitle: "A personal website for hosting information on my projects, blog, and contact information."
+url: "https://andrew.kulpa.dev" # the base hostname & protocol for your site
+# baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
+cover: "/assets/cover.png"
+logo: "/assets/logo.png"
+plugins:
+  - jekyll-sitemap
+# Build settings
+markdown: kramdown
+
+# Google analytics
+ga_tracking_id: "UA-135567050-1"
+
+# Category descriptions (for archive pages)
+descriptions:
+  - cat: jekyll
+    desc: "Posts describing Jekyll setup techniques."
+
+  - cat: dummy
+    desc: "Just some placeholder posts, lorem ipsum and the rest."
