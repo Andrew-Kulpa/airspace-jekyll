@@ -2,6 +2,8 @@
 layout: page
 title: Portfolio
 permalink: /
+description: A portfolio representing recent work and accomplishments by Andrew Kulpa
+keywords: security software developer Andrew Kulpa blog portfolio about me web back-end
 ---
 
 <!-- Slider Start -->
@@ -125,10 +127,10 @@ permalink: /
           <div id="testimonial-slider" class="owl-carousel">
             {% for tm in site.data.testimonials %}
             <div>
-                <img src="img/cotation.png" alt="IMG">
+                <img src="img/cotation.png" alt="quotation icon">
                 <p>{{ tm.testimonial }}</p>
                 <div class="user">
-                  <img src="{{ tm.image }}" alt="Pepole">
+                  <img src="{{ tm.image }}" alt="{{tm.name}} profile picture" title="testimonial picture">
                   <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
                 </div>
             </div>

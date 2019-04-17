@@ -1,8 +1,8 @@
-- title: Computer Science Master's Degree
+- title: CS Master's Degree
   place: Western Illinois University
   years: Dec 2016 - May 2019
   icon: fas fa-graduation-cap
-  description: Integrated Master's with focus upon Graphics and Artificial Intelligence; Master's Project included .NET Core web application for Search Engine Optimization
+  description: Integrated Master's in Computer Science with focus upon Graphics and Artificial Intelligence; Master's Project included .NET Core web application for Search Engine Optimization
   link: 
 
 - title: Back-End Web Developer
@@ -12,7 +12,7 @@
   description: Automated learning management system tasks; Designed identity management databases; Updated raw-PHP user self-service portal to MVC architecture using Laravel
   link:
 
-- title: Computer Science Bachelor's Degree
+- title: CS Bachelor's Degree
   place: Western Illinois University
   years: Aug 2013 - Dec 2017
   icon: fas fa-graduation-cap
