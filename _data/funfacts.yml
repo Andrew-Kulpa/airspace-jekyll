@@ -1,12 +1,12 @@
-- counter: 2006
+- counter: 9001
   icon: ion-ios-book
-  text: Time Magazine Person of the Year
+  text: Puns this Year
 - counter: 60
   icon: ion-md-cafe
   text: Gallons of Coffee per Year
 - counter: 100
   icon: ion-md-checkbox-outline
-  text: Percent of semesters on Dean's List
+  text: "% of semesters on Dean's List"
 - counter: 2.5
   icon: ion-md-cloud-outline
   text: Fun Facts I Could Think Of

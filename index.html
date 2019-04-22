@@ -107,8 +107,8 @@ keywords: security software developer Andrew Kulpa blog portfolio about me web b
       <div class="col-md-6">
         {% if site.data.funfacts.size > 0 %}
         <div class="block">
-          {% for ff in site.data.funfacts %}
           <ul class="counter-box clearfix">
+          {% for ff in site.data.funfacts %}
             <li>
               <div class="block">
                 <i class="{{ ff.icon }}"></i>
@@ -123,19 +123,34 @@ keywords: security software developer Andrew Kulpa blog portfolio about me web b
       </div>
       <div class="col-md-6">
         {% if site.data.testimonials.size > 0 %}
-        <div class="testimonial-carousel">
-          <div id="testimonial-slider" class="owl-carousel">
-            {% for tm in site.data.testimonials %}
-            <div>
-                <img src="img/cotation.png" alt="quotation icon">
-                <p>{{ tm.testimonial }}</p>
-                <div class="user">
-                  <img src="{{ tm.image }}" alt="{{tm.name}} profile picture" title="testimonial picture">
-                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
-                </div>
-            </div>
-            {% endfor %}
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+              {% assign counter = 0 %}
+              {% for tm in site.data.testimonials %}
+                <li data-target="#carouselExampleIndicators" data-slide-to="{{counter}}" class="{% if tm == site.data.testimonials.first %}active{% endif %}"></li>
+                {% assign counter=counter | plus:1 %}
+              {% endfor %}
+          </ol>
+          <div class="carousel-inner testimonial-carousel">
+              {% for tm in site.data.testimonials %}
+              <div class="carousel-item {% if tm == site.data.testimonials.first %}active{% endif %}">
+                  <img src="img/cotation.png" alt="quotation icon">
+                  <p>{{ tm.testimonial }}</p>
+                  <div class="user">
+                    <img src="{{ tm.image }}" alt="{{tm.name}} profile picture" title="testimonial picture">
+                    <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                  </div>
+              </div>
+              {% endfor %}
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
         {% endif %}
       </div>

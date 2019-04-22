@@ -1,34 +1,44 @@
 ---
 layout: post
-title: Setting Up Your GitHub Personal Page With Jekyll and Travis CI
+title: Deploying Jekyll GitHub Pages with Travis CI
 subtitle: Using Jekyll and Travis CI to autodeploy GitHub Pages
 author: Andrew Kulpa
 ---
 ## Intro
-### Github Pages
-### Jekyll
-### Travis CI
+
+GitHub Pages are a free and great way to setup and maintain a website for a personal, organizational, or project website. In addition to plain HTML content Github Pages also supports a popular ruby-based static site generator called Jekyll. There are many advantages to using Jekyll including:
+  * Using Markdown instead of HTML
+  * Using Jekyll themes instead of copying CSS
+  * Incorporating templating for website parts like the head, headers, and footers. 
+  * Simplified local development using commands such as `jekyll build` and `jekyll serve`
+
+GitHub Pages integrates seamlessly by simplifying the build process. Unfortunately, this simplification is not without its limitations. For instance, GitHub Pages builds with the `--safe` flag, which according to Jekyll documentation disables custom plugins and ignores symbolic links. Thankfully, by using Travis CI, we can build the pages ourselves and publish to GitHub Pages.
 
 ## Develop Jekyll Site
 
-Jekyll is a Ruby program that generates static sites. The primary commands are `jekyll build` which outputs the static site to `_site` and `jekyll serve` which rebuilds upon changes and runs a local web server at `http://localhost:4000`.
+I am assuming we have already setup a Jekyll site locally, pushed to GitHub repository, and have determined a location for our GitHub Page. Instead, this tutorial will focus upon the deployment of a Jekyll site. Deploying Jekyll sites is easy once we have the basic pipeline setup. To get to that point, there are two steps:
+  * Setup the source repository with Travis CI
+  * Setup deployment to destination repository & branch
 
-For
-## Setup Source Repository with Travis CI
-1. Sign-up and connect Travis CI to your GitHub account
-2. Go to your repositories at https://travis-ci.org/account/repositories
-3. Find the source repository for your Jekyll site
-4. Flick the repository switch on
-## Setup Deployment to Destination Repo & Branch
-### Exclude vendor in Jekyll `_config.yml`
+### Setup Source Repository with Travis CI
 
-Add the following line:
+The first thing that we need to do is sign-up and connect Travis CI to your GitHub account. To do this, go to travis-ci.org and sign-up with GitHub. Accept the authorization and activate it following a redirect to GitHub. Then, go to your repositories at https://travis-ci.org/account/repositories. Lastly find the source repository for your Jekyll site and flick the repository switch on.
+
+### Setup Deployment to Destination Repo & Branch
+
+The second step to setting up an automatic deployment pipeline for your Jekyll site is much more involved. We can break this down into a few easily chewed parts. 
+
+#### 1. Getting Us All on the Same Page
+
+First, we need to make sure our repository is configured correctly. If there is anything stored in the `vendor` directory, make sure to exclude it from the build process by adding the following line to your Jekyll `_config.yml` file:
 
 ```yaml
 exclude: [vendor]
 ```
 
-### Create deployment `.travis.yml`
+Next, we need to determine where exactly the Jekyll site should be deployed to. If this is a GitHub Page for a project, the destination by default would be the `gh-pages` branch but could also be located at the `mastery` branch or a folder named `docs`. For user and organization GitHub Pages, 
+
+#### Create deployment `.travis.yml`
 
 ```yaml
 language: ruby
@@ -66,6 +76,6 @@ cache: bundler # caching bundler gem packages will speed up build
 notifications:
   email: false
 ```
-## Create repository for user / organization page
-## Setup overridden deployment location (user/org) OR just use base gh-pages setup (local)
+### Create repository for user / organization page
+### Setup overridden deployment location (user/org) OR just use base gh-pages setup (local)
 

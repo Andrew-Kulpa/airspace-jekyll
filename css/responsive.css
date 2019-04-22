@@ -182,11 +182,11 @@ px      68    160    252    */
   #slider .block {
     padding-left: 0px;
   }
-  #slider .block h1 {
+  /* #slider .block h1 {
     font-size: 20px;
-  }
+  } */
   #slider .block p {
-    font-size: 13px;
+    font-size: 16px;
   }
   /*--
 	wrapper Start 

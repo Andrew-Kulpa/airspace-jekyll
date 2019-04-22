@@ -113,8 +113,8 @@
   padding: 5px 15px;
   text-decoration: none;
   background: transparent;
-  border: 2px solid #f27c7c;
-  color: #f27c7c;
+  border: 2px solid #655E7A;
+  color: #655E7A;
   display: inline-block;
   position: relative;
   text-transform: uppercase;
@@ -127,10 +127,10 @@
   -moz-transition: background 0.3s ease;
   -ms-transition: background 0.3s ease;
   transition: background 0.3s ease;
-  -webkit-box-shadow: 2px 2px 0 #f27c7c;
-  -moz-box-shadow: 2px 2px 0 #f27c7c;
-  -ms-box-shadow: 2px 2px 0 #f27c7c;
-  box-shadow: 2px 2px 0 #f27c7c;
+  -webkit-box-shadow: 2px 2px 0 #655E7A;
+  -moz-box-shadow: 2px 2px 0 #655E7A;
+  -ms-box-shadow: 2px 2px 0 #655E7A;
+  box-shadow: 2px 2px 0 #655E7A;
 }
 .btn:hover {
   box-shadow: none;
