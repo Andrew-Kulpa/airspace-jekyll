@@ -4,6 +4,12 @@
   link: https://github.com/Andrew-Kulpa/Fraud-Detection-Classifier
   filters: Security AIAutomation
 
+- title: Search Engine Optimization Analyzer
+  image: https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260
+  description: A C# .NET Core web application for analyzing webpages to objectively improve search engine rankings.
+  link: https://gitlab.com/andrew-kulpa/cloudyseo
+  filters: AIAutomation
+
 - title: OpenGL SSAO
   image: https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260
   description:  An implementation of Screen-Space Ambient Occlusion using C++ and GLSL to appoximate the occlusion factor of objects in a G-Buffer in OpenGL.
