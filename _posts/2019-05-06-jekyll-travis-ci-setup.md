@@ -30,7 +30,7 @@ The first thing that we need to do is sign-up and connect Travis CI to your GitH
 
 The second step to setting up an automatic deployment pipeline for your Jekyll site is much more involved. We can break this down into a few easily chewed parts. 
 
-#### 1. Getting Us All on the Same Page
+#### Getting Us All on the Same Page
 
 First, we need to make sure our repository is configured correctly. If there is anything stored in the `vendor` directory, make sure to exclude it from the build process by adding the following line to your Jekyll `_config.yml` file:
 
@@ -80,8 +80,11 @@ deploy:
     branch: master
 ```
 
-This configuration does quite a bit, so I'll break it down. 
+##### Deployment Breakdown
 
+This configuration does quite a bit, so I'll break it down.
+
+First, we tell Travis CI to use Ruby and Bundler during the build process.
 ```yaml
 language: ruby
 rvm:
@@ -89,8 +92,7 @@ rvm:
 cache: bundler # caching bundler gem packages will speed up build
 ```
 
-This tells Travis CI to use Ruby and Bundler during the build process.
-
+Then, we want to halt the build upon error, in case later script parts fail to process as expected. After this, we can build the site and use `htmlproofer` to test the rendered HTMLfiles to sure the quality of the site.
 ```yaml
 before_script:
 script: 
@@ -99,8 +101,7 @@ script:
  - bundle exec htmlproofer --http-status-ignore "999" ./_site # test site, but ignore any 999 errors (e.g. LinkedIn checks)
 ```
 
-We want to halt the build upon error, in case later script parts fail to process as expected. After this, we can build the site and use `htmlproofer` to test the rendered HTMLfiles to sure the quality of the site.
-
+We also only want to automatically generate site content from the `master` branch and speed up the `html-proofer` installation.
 ```yaml
 branches: # branch whitelist, only for GitHub Pages
   only:
@@ -110,8 +111,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # faster html-proofer install
 ```
 
-We only want to automatically generate site content from the `master` branch and speed up the `html-proofer` installation.
-
+We then make sure that the development files for the OpenSSL flavor of libcurl are available. Optionally, we also disable the email notifications for the build process.
 ```yaml
 addons:
   apt:
@@ -121,8 +121,8 @@ notifications: # Optionally disable build email notifications
   email: false
 ```
 
-We then make sure that the development files for the OpenSSL flavor of libcurl are available. Optionally, we also disable the email notifications for the build process.
 
+In the last part of the `.travis.yml` we use the [Github Pages Deployment Provider](https://docs.travis-ci.com/user/deployment/pages/). The site by default is built to the `./_site` local directory. A [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) is needed at this point too. Once you have created your personal access token and determined the target repository, this information can easily be defined using secure variables in Travis CI. The last few lines determine the source and target branches. As the example repository is a master to master deployment from two different repositories, the configuration is as demonstrated, but your configuration may differ.
 ```yaml
 deploy:
   provider: pages
@@ -137,7 +137,7 @@ deploy:
     branch: master
 ```
 
-In this last part of the `.travis.yml` we use the [Github Pages Deployment Provider](https://docs.travis-ci.com/user/deployment/pages/). The site by default is built to the `./_site` local directory. A [personal access token](https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line) is needed at this point too. Once you have created your personal access token and determined the target repository, this information can easily be defined using secure variables in Travis CI. The last few lines determine the source and target branches. As the example repository is a master to master deployment from two different repositories, the configuration is as demonstrated, but your configuration may differ.
+
 
 #### Update Gemfile
 
