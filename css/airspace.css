@@ -158,14 +158,33 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 27px;
   margin: 0;
 }
+
+#intro .block h3 {
+  padding-top: 20px;
+  margin: 0;
+}
 #intro .block p {
   color: #7B7B7B;
   padding-top: 20px;
 }
+
+#intro .block ul li {
+  color: #7B7B7B;
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+#intro .block ul {
+  margin-bottom: 1rem;
+}
+
 #intro .block img {
   padding-left: 40px;
   width: 100%;
 }
+
+
+
 #intro .section-title {
   margin-bottom: 0px;
 }
@@ -328,6 +347,9 @@ font header .navbar-default .navbar-nav li a:hover {
   width: 90%;
   border: 1px solid #DEDEDE;
   margin: 0 auto;
+}
+.post{
+  background-color: #FCFCFC;
 }
 #testimonial .testimonial-carousel img {
   padding-bottom: 38px;
