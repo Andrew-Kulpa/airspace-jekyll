@@ -35,3 +35,9 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+blog:
+  tags:
+    url: /blog/tags/
+    title_prefix: "blog - tag: "
+    layout: tag.html
