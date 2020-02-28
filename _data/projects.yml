@@ -37,7 +37,7 @@
 - title: VulnApp
   image: https://images.pexels.com/photos/60504/security-protection-anti-virus-software-60504.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
   description: A vulnerable LAMP web application that automatically builds using Chef Solo and Vagrant.
-  link: https://github.com/Andrew-Kulpa/Vulnapp
+  link: https://docs.google.com/presentation/d/1uzaDINlMLVntWHxBEMiO-bgbQ4rYk1vR8PIP0Y-jPME/edit?usp=sharing
   filters: Security
 
 - title: Asteroids2.0
