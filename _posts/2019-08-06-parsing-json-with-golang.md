@@ -3,6 +3,7 @@ layout: post
 title: "Parsing JSON with Golang"
 author: Andrew Kulpa
 excerpt: Parsing common data formats like JSON is a very common and necessary task for anyone using a typical RESTful API. In this blog post, we will go through the basics of using JSON with Go.
+modified_date: 2020-04-25
 # categories: [Go, JSON]
 tags: [Go, JSON]
 ---
