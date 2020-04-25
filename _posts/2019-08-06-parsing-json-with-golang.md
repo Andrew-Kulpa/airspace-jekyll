@@ -14,9 +14,10 @@ Objectives:
   * [Reading JSON Files](#reading-json-files)
   * [Encoding Unstructured Data](#encoding-unstructured-data)
 
-Parsing common data formats like JSON is a very common and necessary task for anyone using a typical RESTful API. In this blog post, we will go through the basics of using JSON with Go. We will look at the main JSON data types and how to work with them simply and idiomatically.
+JavaScript Object Notation (JSON) is a very common file format that is both human-readable and easily parsed. I mean, its so likely that you will come across it (if you haven't already) that I wrote this article!
 
-(What is JSON)
+Parsing common data formats like JSON is a very standard and necessary task for anyone using a typical RESTful API. In this blog post, we will go through the basics of using JSON with Go. To do this, we will look at the main JSON data types and how to work with them simply and idiomatically.
+
 
 ## Parsing JSON
 
@@ -74,7 +75,7 @@ Let's say we needed to process the JSON we received in Go and return as JSON dat
 ```go
 data, _ := json.Marshal(course)
 fmt.Print(string(data) + "\n")
-//prints: {"CourseNumber":101,"Department":"CS","Description":"Intro to Computer Science"}
+// prints: {"CourseNumber":101,"Department":"CS","Description":"Intro to Computer Science"}
 ```
 
 ## JSON Tags
@@ -95,7 +96,7 @@ var alteredCourse = &AlteredCourse{
 }
 alteredData, _ := json.Marshal(alteredCourse)
 fmt.Print(string(alteredData) + "\n")
-//prints: {"courseNum":101,"dept":"CS","Title":"Intro to Computer Science"}
+// prints: {"courseNum":101,"dept":"CS","Title":"Intro to Computer Science"}
 ```
 As demonstrated above, we first defined a new struct called `AlteredCourse` with something new called JSON tags. These JSON tags allow us to have different JSON object keys than the name of the struct variable that they came from. For instance, instead of outputing the key `CourseNumber` we output `courseNum`. This follows for the remaining JSON tags.
 
