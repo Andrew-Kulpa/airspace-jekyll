@@ -40,9 +40,9 @@ PS C:\Users\andrew.kulpa\Documents> Start-Job -ScriptBlock {
 >>   sort count -Desc
 >> }
 
-# Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
-# --     ----            -------------   -----         -----------     --------             -------
-# 7      Job7            BackgroundJob   Running       True            localhost            ...
+Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+--     ----            -------------   -----         -----------     --------             -------
+7      Job7            BackgroundJob   Running       True            localhost            ...
 ```
 
 As we saw, the output of the `Start-Job` cmdlet is an object that describes the background job. Most of these object parameters are quite useful. One thing we can note is that we should be able to set the `Name` of a job by invoking the cmdlet with a value passed to `-Name`.
