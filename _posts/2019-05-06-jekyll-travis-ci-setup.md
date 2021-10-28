@@ -4,6 +4,7 @@ title: Deploying Jekyll GitHub Pages with Travis CI
 subtitle: Using Jekyll and Travis CI to autodeploy GitHub Pages
 author: Andrew Kulpa
 excerpt: GitHub Pages are a free and great way to setup and maintain a website for a personal, organizational, or project website. Thankfully, by using Travis CI, we can build the pages ourselves and publish to GitHub Pages.
+modified_date: 2021-10-28
 tags: [Jekyll, CI]
 ---
 
@@ -151,3 +152,6 @@ gem "html-proofer"
 ## Wrapping Up
 
 In this tutorial we walked through setting up the source repository for your Jekyll site and deploying it to a target repository. While GitHub Pages supports basic deployments, the `--safe` building of Jekyll sites can be rather limiting. Through switching to a Travis CI based deployment process, you may further improve your site without limitation through the newfound freedom of using Jekyll Plugins.
+
+## Update (Oct. 2021)
+Github Actions has improved substantially since the early beta days. Given I feel it has better integration with GitHub, I have switched away from this process and am now exclusively using GitHub Pages and branch-based deployments.
