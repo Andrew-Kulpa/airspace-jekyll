@@ -1,8 +1,15 @@
+- title: Director of Engineering
+  place: Two Point Conversions
+  years: May 2021 - Present
+  icon: fas fa-user-tie
+  description: Direct and oversee the software engineering function for software applications/operating systems according to business needs.
+  link:
+
 - title: Software Engineer
   place: Two Point Conversions
-  years: May 2019 - Present
+  years: May 2019 - May 2021
   icon: fas fa-code
-  description: Reverse engineer client legacy systems; convert and migrate client data securely; build new Angular applications; support development infrastructure in AWS
+  description: Reverse engineered client legacy systems; converted and migrated client data securely; built new Angular applications; supported development infrastructure in AWS
   link:
 
 - title: CS Master's Degree
