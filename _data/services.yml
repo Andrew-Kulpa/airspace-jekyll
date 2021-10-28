@@ -3,16 +3,16 @@
   description: MariaDB, MySQL, Oracle, SQLite, and ORMs like Sequel and ActiveRecord
 - title: Automation
   icon: ion-ios-cog
-  description: CI/CD, Chef, Terraform, and automation tools such as Rundeck
+  description: Chef, Terraform, Ansible, Github Actions, and general CI/CD tooling
 - title: Web Development
   icon: ion-ios-laptop
-  description: Laravel, PHP, Perl, Angular, .NET Core
+  description: Perl, Angular, .NET Core, TypeScript/JavaScript
 - title: Technology Agnostic
   icon: ion-ios-bulb
-  description: OS and Language agnostic, using modern dev environments Vagrant and Docker
+  description: OS and Language agnostic, using modern dev environments typically via Docker
 - title: Source Control
   icon: ion-ios-git-branch
-  description: Maintain all code using Git in Gitlab and GitHub; often open-source
+  description: Maintain all code using Git in GitHub; often open-source
 - title: App Development
   icon: ion-ios-paper
   description: Experience from conceptualization to deployment
@@ -21,5 +21,5 @@
   description: Continuous improvement by identifying and filling knowledge gaps
 - title: Leadership
   icon: ion-ios-man
-  description: Team leadership and leadership in collegiate organizations
+  description: Team leadership and leadership in various organizations
 
