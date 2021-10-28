@@ -28,7 +28,7 @@ keywords: security software engineer Andrew Kulpa blog portfolio about me web ba
         <div class="block">
           <div class="section-title">
             <h2>About Me</h2>
-            <p>Hi. I'm Andrew, a Software Engineer in the Chicago Area. Please take a look around!</p>
+            <p>Hi. I'm Andrew, a Director of Engineering in the Chicago Area. Please take a look around!</p>
           </div>
           <p>I am passionate about developing great software that improves the lives of others. I specialize in creating
             software that automates and streamlines large system processes, such as syncs of data and administrative
@@ -52,7 +52,9 @@ keywords: security software engineer Andrew Kulpa blog portfolio about me web ba
         <div class="section-title">
           <h2>Project Work</h2>
         </div>
-        <p>For the last 6 years, I've been developing software for a variety of areas.</p>
+        {%   assign first_technical_position = '01-02-2015 00:00:00' | date: '%Y'  %}
+        {%   assign years_of_experience = site.time | date: '%Y' | minus:first_technical_position  %}
+        <p>For the last {{years_of_experience}} years, I've been developing software for a variety of areas.</p>
         <p>
           Such domains include security, artificial intelligence, data synchronization, and graphics.
           Why don't you check out some of my work for yourself?
