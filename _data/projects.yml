@@ -53,7 +53,7 @@
   filters: AIAutomation
 
 - title: Rock-Paper-Scissors Bot
-  image: https://images.pexels.com/photos/1068523/pexels-photo-1068523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260
+  image: https://images.pexels.com/photos/6069/grass-lawn-green-wooden-6069.jpg?auto=compress&cs=tinysrgb&w=750&w=1260
   description: A Reddit bot that can play Rock-Paper-Scissors with users via submission comments and mentions.
   link: https://github.com/Andrew-Kulpa/RedditRPSBot
   filters: Game AIAutomation

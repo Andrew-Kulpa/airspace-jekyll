@@ -4,6 +4,7 @@ My personal site using the Airspace Jekyll theme.
 ## Prerequisites
 1. [Ruby](https://www.ruby-lang.org/en/)
 2. [Bundler](https://bundler.io)
+3. Docker (optional)
 ## Steps for Setup:
 
 ### Clone the repository, and `cd` into it:
@@ -12,16 +13,16 @@ $ git clone https://github.com/ndrewtl/airspace-jekyll.git
 $ cd airspace-jekyll
 ```
 
-### Install dependencies locally:
-```sh
-$ bundle install --path vendor/bundle
-```
-
-This should install a local copy of jekyll.
-
-### Now run the server:
+### Run the server from Docker:
 ```sh
 $ bundle exec jekyll server
+```
+Alt:
+```sh
+$ docker run --rm --volume="$PWD:/srv/jekyll" \
+            -p 4000:4000 -it \
+            jekyll/jekyll \
+            jekyll serve --watch --drafts
 ```
 
 ## Deployment
